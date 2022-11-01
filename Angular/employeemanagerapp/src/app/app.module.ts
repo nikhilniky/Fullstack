@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 import { AppComponent } from './app.component';
 import { EmployeeService } from './employee.service';
-import { HttpClientModule } from '@angular/common/http';import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,9 @@ import { HttpClientModule } from '@angular/common/http';import { FormsModule } f
   ],
   imports: [
     BrowserModule,
-    HttpClientModule, FormsModule
+    HttpClientModule, 
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

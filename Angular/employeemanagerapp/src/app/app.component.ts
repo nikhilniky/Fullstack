@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Employee } from './employee';
 import { EmployeeService } from './employee.service';
 import { HttpErrorResponse } from '@angular/common/http';
@@ -13,6 +13,8 @@ export class AppComponent implements OnInit {
   public employees!: Employee[];
   public editEmployee!: Employee;
   public deleteEmployee!: Employee;
+  p:any;
+
 
   constructor(private employeeService: EmployeeService){}
 
